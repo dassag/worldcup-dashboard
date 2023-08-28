@@ -16,7 +16,7 @@ public class CountryController {
 
     @GetMapping("country/{countryName}")
     public Country getByName(@PathVariable String countryName) {
-        return countryRepository.getByCountryName(countryName);
+        return countryRepository.getByCountryNameIgnoreCase(countryName);
     }
 
 }

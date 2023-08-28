@@ -54,6 +54,16 @@ public class JobCompletionNotificationListener implements JobExecutionListener {
 
                     });
 
+            entityManager.createQuery("select m.winner, count(*) from Match m group by m.winner ", Object[].class)
+                    .getResultList()
+                    .stream()
+                    .forEach(countryObj -> {
+                        Country country = countryData.get((String) countryObj[0]);
+                        if (country != null) {
+                            country.setTotalWins((Long) countryObj[1]);
+                        }
+                    });
+
             entityManager.createQuery("select w.winner, count(*) from Winner w group by w.winner", Object[].class)
                     .getResultList()
                     .stream()

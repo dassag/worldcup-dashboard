@@ -8,6 +8,6 @@ import com.dassag.worldcupdashboard.model.Country;
 @Repository
 public interface CountryRepository extends CrudRepository<Country, Long> {
 
-    public Country getByCountryName(String countryName);
+    public Country getByCountryNameIgnoreCase(String countryName);
 
 }

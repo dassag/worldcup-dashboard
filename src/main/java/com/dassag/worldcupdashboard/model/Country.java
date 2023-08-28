@@ -67,7 +67,7 @@ public class Country {
     @Override
     public String toString() {
         return "Country [countryName=" + countryName + ", worldCupCount=" + worldCupCount + ", totalMatchesPlayed="
-                + totalMatchesPlayed + "]";
+                + totalMatchesPlayed + ", totalWins=" + totalWins + "]";
     }
 
 }

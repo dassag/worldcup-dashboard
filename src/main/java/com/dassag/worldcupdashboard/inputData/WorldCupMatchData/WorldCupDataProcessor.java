@@ -20,6 +20,8 @@ public class WorldCupDataProcessor implements ItemProcessor<WorldCupData, Match>
         match.setTeam1(inputData.getTeam1());
         match.setTeam2(inputData.getTeam2());
         match.setStage(inputData.getStage());
+        String winnerOfTheMatch = inputData.getResult().split("won by")[0];
+        match.setWinner(winnerOfTheMatch.trim());
         return match;
     }
 

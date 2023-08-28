@@ -18,6 +18,7 @@ public class Match {
     private String playerOfTheMatch;
     private String stage;
     private Long year;
+    private String winner;
 
     public Long getId() {
         return id;
@@ -89,6 +90,14 @@ public class Match {
 
     public void setYear(Long year) {
         this.year = year;
+    }
+
+    public String getWinner() {
+        return winner;
+    }
+
+    public void setWinner(String winner) {
+        this.winner = winner;
     }
 
 }
