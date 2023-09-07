@@ -1,0 +1,16 @@
+$header-height: 20px;
+$footer-height: 58px;
+
+.app-content{
+    min-height: calc(85vh - #{$footer-height});
+    display: grid;
+    position: relative;
+    padding-top: $header-height;
+    
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}

@@ -1,0 +1,17 @@
+.winner-card{
+    display: grid;
+    height: 7rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: rgb(188, 66, 133);
+    border: 2px solid rgb(157, 75, 42);
+    border-radius: 10px 10px 10px 10px;
+    
+}
+a{
+    color: black;
+}
+.winner-card:hover{
+    background-color:rgb(122, 42, 86);
+    transform: scale3d(1.02, 1.02, 1);
+}

@@ -1,0 +1,27 @@
+.match-card {
+    display: grid;
+    height: 7rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: rgb(243, 71, 71);
+    border: 2px solid rgb(167, 160, 160);
+    border-radius: 10px 10px 10px 10px;
+    padding: 2px 2px 2px 2px;
+    color: rgb(13, 13, 12);
+}
+
+.match-result{
+    margin-top: 40px;
+}
+.match-teams{
+    margin-top: 5px;
+}
+
+a {
+    color: rgb(10, 10, 10);
+}
+
+.match-card:hover {
+    background-color:rgb(206, 59, 59);
+    transform: scale3d(1.02, 1.02, 1);
+}

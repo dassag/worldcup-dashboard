@@ -1,0 +1,32 @@
+.details{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    min-width: 1100px;
+    min-height: 81vh;
+    padding: 50px;
+    background-color: rgb(9, 64, 35);
+    margin-left: 50px;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+a{
+    color: aliceblue;
+}
+.match-stage{
+    grid-column: span 1;
+    text-align: left;
+}
+.more-details{
+    grid-column: span2;
+    text-align: right;
+    margin-top: 80px;
+}
+.countries{
+    grid-column: span 4;    text-align: left;
+}
+.match-details-result{
+    grid-column: span 4;
+    padding-left: 350px;
+    margin-top: 50px;
+    text-align: center;
+}

@@ -1,0 +1,14 @@
+.home{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    row-gap: 10px;
+    justify-content: end;
+    margin: 10px auto;
+    max-width: 1150px;
+}
+.title{
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(243, 243, 237);
+}
