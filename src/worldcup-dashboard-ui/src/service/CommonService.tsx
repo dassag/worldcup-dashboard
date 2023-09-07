@@ -1,29 +1,29 @@
 import axios from 'axios'; 
 
 export const getAllWorldCupWinner = () => {
-    return axios.get(`http://localhost:8080/winner`);
+    return axios.get(`/winner`);
 }
 
 export const getWinnerByYear = (year:number) => {
-    return axios.get(`http://localhost:8080/winner/${year}`);
+    return axios.get(`/winner/${year}`);
 }
 
 export const getCountryDetailsByName = (name: string) => {
-    return axios.get(`http://localhost:8080/country/${name}`);
+    return axios.get(`/country/${name}`);
 }
 
 export const getAllMatchOfTheYear = (year: number) => {
-    return axios.get(`http://localhost:8080/match/${year}`)
+    return axios.get(`/match/${year}`)
 }
 
 export const getMatchByYearAndId = (year: number, id:number) => {
-    return axios.get(`http://localhost:8080/match/${year}/${id}`);
+    return axios.get(`/match/${year}/${id}`);
 }
 
 export const getAllCountries = () => {
-    return axios.get(`http://localhost:8080/countries`);
+    return axios.get(`/countries`);
 }
 
 export const getYearsWon = (name: string) => {
-    return axios.get(`http://localhost:8080/winner/country/${name}`);
+    return axios.get(`/winner/country/${name}`);
 }

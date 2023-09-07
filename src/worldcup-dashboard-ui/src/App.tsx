@@ -20,7 +20,7 @@ function App() {
           
             <Switch>
               <Route exact={ true} path='/matches/:id' component={MatchPage} />
-              <Route exact={ true} path='/matches/:year/:id' component={MatchDetailsPage} />
+              <Route exact={ true} path='/match/:year/:id' component={MatchDetailsPage} />
               <Route exact={ true} path='/countries' component={Countries} />
               <Route exact={ true} path='/country/:name' component={CountryPage} />
               <Route exact={ true} path='/' component={HomePage} />
